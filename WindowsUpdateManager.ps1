@@ -83,13 +83,13 @@ Add-Type -AssemblyName System.Windows.Forms
     
 $form = New-Object System.Windows.Forms.Form
 $form.Text = 'Windows Update Manager'
-$form.Size = New-Object System.Drawing.Size(420, 420)
+$form.Size = New-Object System.Drawing.Size(490, 420)
 $form.StartPosition = 'CenterScreen'
 $form.BackColor = 'Black'
 
 $TabControl = New-Object System.Windows.Forms.TabControl
 $TabControl.Location = New-Object System.Drawing.Size(-4, 15)
-$TabControl.Size = New-Object System.Drawing.Size(480, 460) 
+$TabControl.Size = New-Object System.Drawing.Size(490, 460) 
 $TabControl.BackColor = [System.Drawing.Color]::FromArgb(45, 45, 48)
 
 
@@ -108,7 +108,7 @@ $TabControl.Controls.Add($TabPage2)
 $Form.Controls.Add($TabControl)
 
 $label1 = New-Object System.Windows.Forms.Label
-$label1.Location = New-Object System.Drawing.Point(10, 10)
+$label1.Location = New-Object System.Drawing.Point(30, 10)
 $label1.Size = New-Object System.Drawing.Size(150, 25)
 $label1.Text = 'Enable Options:'
 $label1.ForeColor = 'White'
@@ -117,7 +117,7 @@ $form.Controls.Add($label1)
 $TabPage1.Controls.Add($label1)
       
 $label2 = New-Object System.Windows.Forms.Label
-$label2.Location = New-Object System.Drawing.Point(200, 10)  
+$label2.Location = New-Object System.Drawing.Point(220, 10)  
 $label2.Size = New-Object System.Drawing.Size(150, 25)
 $label2.Text = 'Disable Options:'
 $label2.ForeColor = 'White'
@@ -128,7 +128,7 @@ $TabPage1.Controls.Add($label2)
 
 $btn1 = New-Object Windows.Forms.Button
 $btn1.Text = 'Disable Updates'
-$btn1.Location = New-Object Drawing.Point(200, 40)
+$btn1.Location = New-Object Drawing.Point(220, 40)
 $btn1.Size = New-Object Drawing.Size(130, 35)
 $btn1.Add_Click({
     
@@ -161,7 +161,7 @@ $TabPage1.Controls.Add($btn1)
 
 $btn2 = New-Object Windows.Forms.Button
 $btn2.Text = 'Pause Updates'
-$btn2.Location = New-Object Drawing.Point(10, 80)
+$btn2.Location = New-Object Drawing.Point(30, 80)
 $btn2.Size = New-Object Drawing.Size(130, 35)
 $btn2.Add_Click({
         Write-Host '-----------------PAUSING UPDATES-----------------'
@@ -254,7 +254,7 @@ $TabPage1.Controls.Add($btn2)
 
 $btn3 = New-Object Windows.Forms.Button
 $btn3.Text = 'Disable Drivers in Update'
-$btn3.Location = New-Object Drawing.Point(200, 80)
+$btn3.Location = New-Object Drawing.Point(220, 80)
 $btn3.Size = New-Object Drawing.Size(130, 35)
 $btn3.Add_Click({
         Write-Host '-----------------DISABLING DRIVERS IN WINDOWS UPDATE-----------------' 
@@ -275,7 +275,7 @@ $TabPage1.Controls.Add($btn3)
 
 $btn4 = New-Object Windows.Forms.Button
 $btn4.Text = 'Disable Auto Driver Searching'
-$btn4.Location = New-Object Drawing.Point(200, 160)
+$btn4.Location = New-Object Drawing.Point(220, 160)
 $btn4.Size = New-Object Drawing.Size(130, 35)
 $btn4.Add_Click({
         Write-Host '-----------------DISABLING DRIVER SEARCHING-----------------'
@@ -294,7 +294,7 @@ $TabPage1.Controls.Add($btn4)
 
 $btn5 = New-Object Windows.Forms.Button
 $btn5.Text = 'Disable Optional Updates'
-$btn5.Location = New-Object Drawing.Point(200, 120)
+$btn5.Location = New-Object Drawing.Point(220, 120)
 $btn5.Size = New-Object Drawing.Size(130, 35)
 $btn5.Add_Click({
         Write-Host '-----------------DISABLING OPTIONAL UPDATES (W11 ONLY)-----------------'
@@ -314,7 +314,7 @@ $TabPage1.Controls.Add($btn5)
 
 $btn6 = New-Object Windows.Forms.Button
 $btn6.Text = 'Enable Updates'
-$btn6.Location = New-Object Drawing.Point(10, 40)
+$btn6.Location = New-Object Drawing.Point(30, 40)
 $btn6.Size = New-Object Drawing.Size(130, 35)
 $btn6.Add_Click({
         Write-Host '-----------------ENABLING UPDATES-----------------'
@@ -349,7 +349,7 @@ $TabPage1.Controls.Add($btn6)
 
 $btn7 = New-Object Windows.Forms.Button
 $btn7.Text = 'Disable Update Restart Notifications'
-$btn7.Location = New-Object Drawing.Point(200, 200)
+$btn7.Location = New-Object Drawing.Point(220, 200)
 $btn7.Size = New-Object Drawing.Size(130, 35)
 $btn7.Add_Click({
         Write-Host '-----------------DISABLING NOTIFICATIONS-----------------'
@@ -370,7 +370,7 @@ $TabPage1.Controls.Add($btn7)
 
 $btn8 = New-Object Windows.Forms.Button
 $btn8.Text = 'Defer Feature and Quality Updates'
-$btn8.Location = New-Object Drawing.Point(200, 240)
+$btn8.Location = New-Object Drawing.Point(220, 240)
 $btn8.Size = New-Object Drawing.Size(130, 35)
 $btn8.Add_Click({
         Write-Host '-----------------DEFERING FEATURE AND QUALITY UPDATES FOR [MAX] DAYS-----------------'
@@ -393,7 +393,7 @@ $TabPage1.Controls.Add($btn8)
 
 $btn9 = New-Object Windows.Forms.Button
 $btn9.Text = 'Disable Delivery Optimization'
-$btn9.Location = New-Object Drawing.Point(200, 280)
+$btn9.Location = New-Object Drawing.Point(220, 280)
 $btn9.Size = New-Object Drawing.Size(130, 35)
 $btn9.Add_Click({
         Write-Host '-----------------DISABLING DELIVERY OPTIMIZATION-----------------'
@@ -414,7 +414,7 @@ $TabPage1.Controls.Add($btn9)
 
 $btn10 = New-Object Windows.Forms.Button
 $btn10.Text = 'Enable Optional Updates'
-$btn10.Location = New-Object Drawing.Point(10, 120)
+$btn10.Location = New-Object Drawing.Point(30, 120)
 $btn10.Size = New-Object Drawing.Size(130, 35)
 $btn10.Add_Click({
         Write-Host '-----------------ENABLING OPTIONAL UPDATES-----------------'
@@ -434,7 +434,7 @@ $TabPage1.Controls.Add($btn10)
 
 $btn11 = New-Object Windows.Forms.Button
 $btn11.Text = 'Enable Auto Driver Searching'
-$btn11.Location = New-Object Drawing.Point(10, 160)
+$btn11.Location = New-Object Drawing.Point(30, 160)
 $btn11.Size = New-Object Drawing.Size(130, 35)
 $btn11.Add_Click({
         Write-Host '-----------------ENABLING AUTO DRIVER SEARCHING-----------------'
@@ -454,7 +454,7 @@ $TabPage1.Controls.Add($btn11)
 
 $btn12 = New-Object Windows.Forms.Button
 $btn12.Text = 'Enable Update Restart Notifications'
-$btn12.Location = New-Object Drawing.Point(10, 200)
+$btn12.Location = New-Object Drawing.Point(30, 200)
 $btn12.Size = New-Object Drawing.Size(130, 35)
 $btn12.Add_Click({
         Write-Host '-----------------ENABLING UPDATE RESTART NOTIFICATIONS-----------------'
@@ -475,7 +475,7 @@ $TabPage1.Controls.Add($btn12)
 
 $btn13 = New-Object Windows.Forms.Button
 $btn13.Text = 'Allow Feature and Quality Updates'
-$btn13.Location = New-Object Drawing.Point(10, 240)
+$btn13.Location = New-Object Drawing.Point(30, 240)
 $btn13.Size = New-Object Drawing.Size(130, 35)
 $btn13.Add_Click({
         Write-Host '-----------------ALLOWING FEATURE AND QUALITY UPDATES-----------------'
@@ -498,7 +498,7 @@ $TabPage1.Controls.Add($btn13)
 
 $btn14 = New-Object Windows.Forms.Button
 $btn14.Text = 'Enable Delivery Optimization'
-$btn14.Location = New-Object Drawing.Point(10, 280)
+$btn14.Location = New-Object Drawing.Point(30, 280)
 $btn14.Size = New-Object Drawing.Size(130, 35)
 $btn14.Add_Click({
         Write-Host '-----------------ENABLING DELIVERY OPTIMIZATION-----------------'
@@ -727,7 +727,7 @@ $TabPage2.Controls.Add($noUpdates)
 
 $checkedListBox = New-Object System.Windows.Forms.CheckedListBox
 $checkedListBox.Location = New-Object System.Drawing.Point(7, 190)
-$checkedListBox.Size = New-Object System.Drawing.Size(390, 120)
+$checkedListBox.Size = New-Object System.Drawing.Size(450, 120)
 $checkedListBox.BackColor = 'Black'
 $checkedListBox.ForeColor = 'White'
 $checkedListBox.ScrollAlwaysVisible = $false
@@ -761,7 +761,7 @@ $checkForUpdate = {
 
 $checkUpdate = New-Object Windows.Forms.Button
 $checkUpdate.Text = 'Check for Updates'
-$checkUpdate.Location = New-Object Drawing.Point(10, 310)
+$checkUpdate.Location = New-Object Drawing.Point(30, 310)
 $checkUpdate.Size = New-Object Drawing.Size(120, 35)
 $checkUpdate.Add_Click({
         &$checkForUpdate
@@ -804,7 +804,7 @@ $installSelectedUpdate = {
 
 $installSelected = New-Object Windows.Forms.Button
 $installSelected.Text = 'Install Selected Updates'
-$installSelected.Location = New-Object Drawing.Point(140, 310)
+$installSelected.Location = New-Object Drawing.Point(160, 310)
 $installSelected.Size = New-Object Drawing.Size(120, 35)
 $installSelected.Add_Click({
         &$installSelectedUpdate
@@ -858,7 +858,7 @@ $installAllUpdates = {
 
 $installALL = New-Object Windows.Forms.Button
 $installALL.Text = 'Install All Updates'
-$installALL.Location = New-Object Drawing.Point(270, 310)
+$installALL.Location = New-Object Drawing.Point(290, 310)
 $installALL.Size = New-Object Drawing.Size(120, 35)
 $installALL.Add_Click({
         &$installAllUpdates
